@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f0f2f5;
+  color: #212121;
+}
+
+/* Container for the app elements */
+.app-container {
+  max-width: 90%;
+  width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Button Styles */
+#startStopBtn {
+  padding: 12px 24px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px auto;
+}
+
+#startStopBtn:hover {
+  background: #303f9f;
+}
+
+/* Canvas Styles */
+#frequencyDisplay {
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  margin: 15px 0;
+  display: block;
+}
+
+/* Frequency Value Text */
+#frequencyValue {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #3f51b5;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+  }
+  
+  #startStopBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #frequencyValue {
+    font-size: 1.5rem;
+  }
+  
+  #frequencyDisplay {
+    max-width: 100%;
+  }
+}
